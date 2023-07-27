@@ -1,0 +1,8 @@
+/* Your custom CSS file or inline styles */
+/* Your custom CSS file or inline styles */
+.banner-section {
+  background-image: url("./images/banner1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
