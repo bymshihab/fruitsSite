@@ -54,41 +54,58 @@
     <header class="container mx-auto">
       <!-- nav bar -->
 
-      <div
-        class="lg:navbar lg:bg-[#F85559] lg:rounded-full flex justify-between mt-10 mb-10"
-      >
-        <div class="" style="display: flex; align-items: center">
-          <a class="btn btn-ghost normal-case text-white text-xl">Home</a>
-          <a class="btn btn-ghost normal-case text-white text-xl">About Us</a>
-          <a class="btn btn-ghost normal-case text-white text-xl">Shop</a>
-          <a class="btn btn-ghost normal-case text-white text-xl">All Fruits</a>
+      <div class="lg:hidden">
+        <!-- Hamburger Menu -->
+        <div
+          class="bg-[#F85559] py-3 px-4 rounded-full fixed top-5 right-5 z-50"
+        >
+          <div class="hamburger-icon w-6 h-1 bg-white mb-1"></div>
+          <div class="hamburger-icon w-6 h-1 bg-white mb-1"></div>
+          <div class="hamburger-icon w-6 h-1 bg-white"></div>
         </div>
+      </div>
 
+      <div
+        class="lg:navbar lg:bg-[#F85559] lg:rounded-full flex justify-between mt-10 mb-10 hidden lg:flex"
+      >
         <div
-          style="display: flex; align-items: center; justify-content: center"
+          class="lg:navbar lg:bg-[#F85559] lg:rounded-full flex justify-between mt-10 mb-10"
         >
-          <img src="./images/logo.png" alt="" />
-          <h1 class="text-3xl text-white font-bold mx-3">Fruit Burst</h1>
-        </div>
-        <div
-          class=""
-          style="
-            display: flex;
-            align-items: center;
-            /* justify-items: center; */
-            /* justify-content: center; */
-            margin-top: -9px;
-            margin-right: 8px;
-          "
-        >
-          <div class="form-control flex">
-            <input
-              type="text"
-              placeholder="Search here"
-              class="input input rounded-full w-30 md:w-auto lg:w-80"
-            />
-            <div class="flex justify-end -mt-9 mx-1">
-              <img src="./images/search.svg" class="h-7 w-10" alt="" />
+          <div class="" style="display: flex; align-items: center">
+            <a class="btn btn-ghost normal-case text-white text-xl">Home</a>
+            <a class="btn btn-ghost normal-case text-white text-xl">About Us</a>
+            <a class="btn btn-ghost normal-case text-white text-xl">Shop</a>
+            <a class="btn btn-ghost normal-case text-white text-xl"
+              >All Fruits</a
+            >
+          </div>
+
+          <div
+            style="display: flex; align-items: center; justify-content: center"
+          >
+            <img src="./images/logo.png" alt="" />
+            <h1 class="text-3xl text-white font-bold mx-3">Fruit Burst</h1>
+          </div>
+          <div
+            class=""
+            style="
+              display: flex;
+              align-items: center;
+              /* justify-items: center; */
+              /* justify-content: center; */
+              margin-top: -9px;
+              margin-right: 8px;
+            "
+          >
+            <div class="form-control flex">
+              <input
+                type="text"
+                placeholder="Search here"
+                class="input input rounded-full w-30 md:w-auto lg:w-80"
+              />
+              <div class="flex justify-end -mt-9 mx-1">
+                <img src="./images/search.svg" class="h-7 w-10" alt="" />
+              </div>
             </div>
           </div>
         </div>
@@ -517,16 +534,13 @@
       </section>
       <!-- deal of the day END -->
       <!-- Meet team Section -->
-      <section class="container mx-auto mt-10 h-690 w-1440 border">
-        <div
-          class="banner-section top-0 left-0 h-full w-full rounded-xl"
-          style="height: 100%; width: 100%"
-        >
+      <section class="container mx-auto mt-10 p-5 sm:py-10 sm:px-0">
+        <div class="banner-section top-0 left-0 w-full rounded-xl">
           <div class="flex flex-col items-center">
-            <h1 class="text-3xl font-extrabold text-white mt-10">
+            <h1 class="text-3xl font-extrabold text-white mt-5 sm:mt-10">
               Meet the team section
             </h1>
-            <p class="w-615 text-center text-base text-white mt-5">
+            <p class="w-615 text-center text-base text-white mt-3 sm:mt-5">
               Contrary to popular belief, is not simply random text. It has
               roots in a piece of classical Latin literature from 45 BC, making
               it over 2000 years old.
@@ -534,11 +548,11 @@
           </div>
 
           <div
-            class="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 mx-5"
+            class="mt-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5"
           >
             <!-- member1 -->
-            <div class="card w-100 shadow-xl">
-              <figure class="px-10 pt-10">
+            <div class="card w-full shadow-xl">
+              <figure class="px-5 pt-5">
                 <img src="/images/member1.png" alt="Shoes" class="rounded-xl" />
               </figure>
               <div class="card-body items-center text-center">
@@ -553,8 +567,8 @@
             </div>
 
             <!-- member 2 -->
-            <div class="card w-100 shadow-xl">
-              <figure class="px-10 pt-10">
+            <div class="card w-full shadow-xl">
+              <figure class="px-5 pt-5">
                 <img src="/images/member1.png" alt="Shoes" class="rounded-xl" />
               </figure>
               <div class="card-body items-center text-center">
@@ -569,8 +583,8 @@
             </div>
 
             <!-- member 3 -->
-            <div class="card w-100 shadow-xl">
-              <figure class="px-10 pt-10">
+            <div class="card w-full shadow-xl">
+              <figure class="px-5 pt-5">
                 <img src="/images/member1.png" alt="Shoes" class="rounded-xl" />
               </figure>
               <div class="card-body items-center text-center">
@@ -585,8 +599,8 @@
             </div>
 
             <!-- member 4 -->
-            <div class="card w-100 shadow-xl">
-              <figure class="px-10 pt-10">
+            <div class="card w-full shadow-xl">
+              <figure class="px-5 pt-5">
                 <img src="/images/member1.png" alt="Shoes" class="rounded-xl" />
               </figure>
               <div class="card-body items-center text-center">
